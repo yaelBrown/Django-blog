@@ -1,0 +1,1 @@
+blog built with Python Django. Using the same database from Spring-Blog repository. 
