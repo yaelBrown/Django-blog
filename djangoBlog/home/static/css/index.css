@@ -1,0 +1,23 @@
+.postsArea {
+  width: 75%;
+}
+
+.postsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.postsArea {
+  width: 100%;
+}
+
+.sidebar {
+  width: 200px;
+}
+
+.post {
+  margin-bottom: 3rem;
+  width: 90%;
+}
