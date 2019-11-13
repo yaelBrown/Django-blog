@@ -11,3 +11,12 @@ from django.http import HttpResponse
 
 def home(request):
   return render(request, 'home/index.html')
+
+def userLogin(request):
+  return render(request, 'users/login.html')
+
+def userRegister(request):
+  return render(request, 'users/register.html')
+
+def postCreate(request):
+  return render(request, 'posts/create.html')
