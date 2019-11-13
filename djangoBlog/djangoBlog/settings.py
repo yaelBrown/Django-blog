@@ -77,7 +77,11 @@ WSGI_APPLICATION = 'djangoBlog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'spring_blog',
+        'USER': 'root',
+        'PASSWORD': 'codeup',
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
 
