@@ -13,10 +13,10 @@ def home(request):
   return render(request, 'home/index.html')
 
 def userLogin(request):
-  return render(request, 'users/login.html')
+  return render(request, 'home/login.html')
 
 def userRegister(request):
-  return render(request, 'users/register.html')
+  return render(request, 'home/register.html')
 
 def postCreate(request):
-  return render(request, 'posts/create.html')
+  return render(request, 'home/create.html')

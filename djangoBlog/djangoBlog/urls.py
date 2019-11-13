@@ -17,9 +17,9 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
+    url('', include('home.urls')),
     url(r'^admin/', admin.site.urls),
-    url('users/login/', include('home.urls'), name='login'),
-    url('users/register/', include('home.urls')),
-    url('posts/create/', include('home.urls')),
-    url('', include('home.urls'))
+    url('login', include('home.urls')),
+    url('register', include('home.urls')),
+    url('create', include('home.urls'))
 ]
