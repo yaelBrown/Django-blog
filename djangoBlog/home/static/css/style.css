@@ -60,10 +60,15 @@ body {
 
 /* Page Content */
 
+nav {
+  padding-right: 2rem;
+}
+
 .wrapper {
   background: #ffffff;
   border-radius: 10px;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 2rem;
   min-height: 500px;
   display: flex;

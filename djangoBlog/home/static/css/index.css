@@ -1,7 +1,3 @@
-.postsArea {
-  width: 75%;
-}
-
 .postsWrapper {
   display: flex;
   flex-direction: row;
@@ -11,6 +7,8 @@
 
 .postsArea {
   width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .sidebar {

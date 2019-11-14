@@ -27,10 +27,7 @@ con = pymysql.Connect('localhost', 'root', 'codeup', 'spring_blog')
 # ]
 
 posts = []
-
-
-
-
+out = []
 
 # Create your views here.
 
@@ -38,21 +35,29 @@ posts = []
 #   return HttpResponse('<h1>Blog Home</h1>')
 
 def home(request):
-  with con: 
-    cur = con.cursor()
-    cur.execute("SELECT * FROM posts")
+  try:
+    with con: 
+      cur = con.cursor()
+      cur.execute("SELECT * FROM posts")
 
-  rows = cur.fetchall()
+    rows = cur.fetchall()
 
-  for row in rows:
-    temp = {'id': row[0], 'author': row[1], 'content': row[2], 'title': row[3]}
-    posts.append(temp)
+    for row in rows:
+      temp = {'id': row[0], 'author': row[1], 'content': row[2], 'title': row[3]}
+      out.append(temp)
+      temp = {}
 
-  # print(posts)
+    posts = out.copy()
+    out.clear()
 
-  context = {
-    'posts': posts
-  }
+    context = {
+      'posts': posts
+    }
+
+    del rows
+
+  except: 
+    print('A error has occured with GET to Index')
 
   return render(request, 'home/index.html', context)
 
