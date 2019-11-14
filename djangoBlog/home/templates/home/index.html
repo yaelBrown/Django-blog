@@ -11,7 +11,7 @@
     <!-- Where all the posts would go -->
     <div class="postsArea">
 
-      <div class="post">
+      <!-- <div class="post">
         <h3>Title</h3>
         <h5><em>Author</em></h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ex? Distinctio quaerat dolorum, necessitatibus voluptas et provident iusto, expedita asperiores quis praesentium aperiam ex nam voluptatum labore assumenda aliquid nemo?</p>
@@ -21,15 +21,15 @@
         <h3>Title</h3>
         <h5><em>Author</em></h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ex? Distinctio quaerat dolorum, necessitatibus voluptas et provident iusto, expedita asperiores quis praesentium aperiam ex nam voluptatum labore assumenda aliquid nemo?</p>
-      </div>
+      </div> -->
 
-      <!-- {% for post in posts %}
+      {% for p in posts %}
       <div class="post">
-        <h3>{{ post.title }}</h3>
-        <h5><em>{{ post.author }}</em></h5>
-        <p>{{ post.content }}</p>
+        <h3>{{ p.title }}</h3>
+        <h5><em>{{ p.author }}</em></h5>
+        <p>{{ p.content }}</p>
       </div>
-      {% endfor %} -->
+      {% endfor %}
 
     </div>
 

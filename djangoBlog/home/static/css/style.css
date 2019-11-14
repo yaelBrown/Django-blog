@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 
-a:link {
+/* a:link {
 
 }
 
@@ -44,7 +44,7 @@ a:hover,
 a:active,
 a:visited {
 
-}
+} */
 
 main, html, body {
   width: 100%;
