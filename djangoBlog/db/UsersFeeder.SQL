@@ -11,5 +11,3 @@ create TABLE users (
     username varchar(50) unique,
     password varchar(255)
 );
-
-insert (username, password) values ('yael', 'yaelpass'), ('test', 'test');

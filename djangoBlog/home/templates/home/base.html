@@ -14,12 +14,15 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../../static/css/style.css">
-    <!-- <link rel="stylesheet" href="../../static/css/index.css"> -->
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <title> Yael's Django Blog -</title>
+    {% if title %}
+      <title>Yael's Django Blog - {{ title }}</title>
+    {% else %}
+      <title>Yael's Django Blog - Home</title>
+    {% endif %}
   </head>
   <body>
     <!-- navbar -->
@@ -52,10 +55,9 @@
 
       <div class="container">
         <div class="wrapper">
-          <h1>Temp page</h1>
 
-          
-          
+          {% block content %}{% endblock %}
+
           <footer>
             <p>Created by Yael :) <a href="https://github.com/yaelBrown/Django-blog"><i class="fab fa-github"></i></a></p>
           </footer>
