@@ -36,7 +36,7 @@ out = []
 
 def home(request):
   try:
-    with con: 
+    with con:
       cur = con.cursor()
       cur.execute("SELECT * FROM posts")
 
@@ -56,7 +56,7 @@ def home(request):
 
     del rows
 
-  except: 
+  except:
     print('A error has occured with GET to Index')
 
   return render(request, 'home/index.html', context)
@@ -65,6 +65,13 @@ def userLogin(request):
   return render(request, 'home/login.html')
 
 def userRegister(request):
+  if request.method == 'POST':
+    username = request.POST["username"]
+    password = request.POST["password"]
+    email = request.POST["email"]
+    print(username + ' ' + password + ' ' + email)
+
+
   return render(request, 'home/register.html')
 
 def postCreate(request):

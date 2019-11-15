@@ -6,18 +6,19 @@
 
   <div class="registerForm">
     <form method="POST" action="/register">
+      {% csrf_token %}
       <fieldset>
         <div class="form-group">
           <label for="exampleInputPassword1">Username</label>
-          <input type="text" class="form-control" id="username" placeholder="Username">
+          <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Password">
+          <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
         </div>
         </fieldset>
         <div class="register-btn-group">
