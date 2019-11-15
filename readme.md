@@ -1,3 +1,11 @@
-blog built with Python Django. Using the same database from Spring-Blog repository. 
+blog built with Python Django. Using the same database from Spring-Blog repository.
 
-using pymysql and django 2.1.14
+using pysql and django 2.1.14
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+yael;mexico27
+
+localhost:8000/admin
