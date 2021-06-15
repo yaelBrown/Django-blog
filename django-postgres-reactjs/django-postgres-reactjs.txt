@@ -1,11 +1,25 @@
+create virtual environment
+  python3 -m venv env2
+  source env2/bin/activate
+
 install django
 
-  pip install django djangorestframework markdown django-filter
+  pip3 install django djangorestframework flake8 
+
+  flake8 - python linter
+    add to vscode.settings.json
+      "python.linting.flake8Enabled": true,
+      "python.linting.pydocstyleEnabled": true (requires pydocstyle vscode plugin)
 
 
 bootstrap django
 
-  python3 -m django startproject server
+  django-admin startproject api
+  cd api
+  python3 manage.py startapp core       # add route information into core
+  python3 manage.py startapp migrate
+  python3 manage.py startapp runserver
+
 
   python3 manager.py runserver
     http://127.0.0.1:8000/
@@ -24,13 +38,24 @@ add to settings.py
   }
 
 
-add to urls
-  ???
 
 
 
 
 
+dev the app
+  Create model 
+    create migrations file 
+      python manage.py makemigrations [appName]
+
+    import migrations to db
+      python manage.py migrate (run initially to get initial migrates)
 
 
-  https://www.youtube.com/watch?v=BSHRftLtPEg
+export requirements
+  pip freeze > requirements.txt
+
+
+
+https://www.youtube.com/watch?v=CEAJGKXPEsY
+1:48
