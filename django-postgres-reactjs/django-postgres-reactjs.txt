@@ -24,21 +24,20 @@ bootstrap django
   python3 manager.py runserver
     http://127.0.0.1:8000/
 
+  Setup postgres db with project
+    https://www.youtube.com/watch?v=t6RbanOhna4
+      "Works the same as with sqlite"
 
-add to settings.py
-  
-  https://www.django-rest-framework.org/
-
-  REST_FRAMEWORK = {
-    # Use Django's standard `django.contrib.auth` permissions,
-    # or allow read-only access for unauthenticated users.
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
-  }
+    tldw: add changes in databases section in settings.py 
 
 
+  Serve FE
+    render() from django.shortcuts (and redirect)
 
+  Create django.models - https://docs.djangoproject.com/en/3.2/topics/db/models/
+  Making django.queries - https://docs.djangoproject.com/en/3.2/topics/db/queries/
+    .all()
+    .filter()
 
 
 
@@ -54,6 +53,10 @@ dev the app
 
 export requirements
   pip freeze > requirements.txt
+
+
+Material Design Editable Cells
+  https://codesandbox.io/s/material-ui-editable-tables-wsp0c
 
 
 
