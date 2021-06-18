@@ -4,8 +4,10 @@ create virtual environment
 
 install django
 
-  pip3 install django djangorestframework flake8 
+  pip3 install django flake8 
 
+  djangorestframework
+  
   flake8 - python linter
     add to vscode.settings.json
       "python.linting.flake8Enabled": true,
@@ -62,3 +64,42 @@ Material Design Editable Cells
 
 https://www.youtube.com/watch?v=CEAJGKXPEsY
 1:48
+
+
+
+
+
+
+collapsable tables
+  react table (edit cells)
+
+  create calc methods (that update in real time)
+
+
+docker stuff
+  node/reactjs container
+  python/django container
+  postgres
+    create test table
+
+  portainer
+  pgadmin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
