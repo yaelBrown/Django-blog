@@ -10,7 +10,7 @@ colorama==0.4.4
 cors==0.9.11
 decorator==5.0.7
 defusedxml==0.7.1
-Django==3.2.4
+Django==3.2.13
 django-filter==2.4.0
 djangorestframework==3.12.4
 filelock==3.0.12
